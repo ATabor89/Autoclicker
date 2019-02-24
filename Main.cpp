@@ -2,6 +2,7 @@
 
 #include <thread>
 #include <chrono>
+#include <iostream>
 
 void LeftClick()
 {
@@ -20,6 +21,7 @@ void LeftClick()
 
 int main()
 {
+	std::cout << "Press F6 to toggle autoclicker || Press F7 to exit\n\n";
 
 	bool click = false;
 	std::chrono::milliseconds clickInterval = std::chrono::milliseconds(50);
